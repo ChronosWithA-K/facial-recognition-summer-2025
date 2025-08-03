@@ -14,7 +14,5 @@ This is a facial recognition software designed to draw a bounding box around vis
 
 ## Errors
 
- - Tensorflow doesn't support Python 3.13
-   - Fix: downgrade to Python 3.12.10
  - Tensowflow and opencv-python couldn't be installed with pip, labelme not recognised as command
-   - Fix: uninstall Python from Microsoft and reinstall (same version) from official website, adding python.exe to PATH
+   - Fix: uninstall Python from Microsoft Store and reinstall (same version) from official website, adding python.exe to PATH
