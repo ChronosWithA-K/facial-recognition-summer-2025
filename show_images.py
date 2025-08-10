@@ -1,3 +1,5 @@
+# CODE IS BROKEN BECAUSE IMAGES/LABELS FOLDERS ARE EMPTY
+
 import os
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0' # Stops floating-point round-off errors
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # Suppress '[...] rebuild TensorFlow with the appropriate compiler flags'
@@ -9,7 +11,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import keras
 
-images = tf.data.Dataset.list_files('data\\images\\*.jpg')
+images = tf.data.Dataset.list_files('data\\images\\*.jpg', shuffle=False)
 # print(images.as_numpy_iterator().next()) # Test images appear - they do
 
 def load_image(image_path):
@@ -27,9 +29,7 @@ image_generator = images.batch(4).as_numpy_iterator()
 plot_images = image_generator.next()
 
 # Show batches of 4 random images
-# fix, ax = plt.subplots(1, 4, figsize=(20, 20))
-# for idx, image in enumerate(plot_images):
-#     ax[idx].imshow(image)
-# plt.show()
-
-
+fix, ax = plt.subplots(1, 4, figsize=(20, 20))
+for idx, image in enumerate(plot_images):
+    ax[idx].imshow(image)
+plt.show()
