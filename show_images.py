@@ -1,4 +1,4 @@
-# CODE IS BROKEN BECAUSE IMAGES/LABELS FOLDERS ARE EMPTY
+# Code is broken (this is intentional, contents were moved to data/train/images and data/train/labels)
 
 import os
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0' # Stops floating-point round-off errors
