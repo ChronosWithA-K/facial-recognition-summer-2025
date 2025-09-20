@@ -10,6 +10,19 @@ This is a facial recognition software designed to draw a bounding box around vis
  - matplotlib
  - albumentations
 
+## Libraries imported
+
+ - os
+ - time
+ - uuid
+ - json
+ - keras
+ - cv2
+ - numpy
+ - pyplot from matplotlib
+ - albumentations
+ - tensorflow
+
 ## What I Learned
 
  - Advantages of using a virtual environment (venv/virtualenv)
